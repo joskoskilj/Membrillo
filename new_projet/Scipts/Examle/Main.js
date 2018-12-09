@@ -1,0 +1,148 @@
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+///---------------------------------------------VARIBLES-------------------------------
+var message = 'Main';
+console.log(message);
+var x = 10;
+var y = 12;
+/*var b;
+let sum;
+console.log(b);
+
+const name = 'Constatntin';
+let isBeginner: boolean = true;
+console.log(name + " " + isBeginner);*/
+/*
+let Beginner = true;
+let total: number = 27;
+let name: string = 'Vishu';
+
+let sentance : string = `my name is ${name} chiki `
+console.log(sentance)
+///-------------------------------------------ARRAYS------------------------------------
+let u: null = null;
+let is: undefined = undefined;*/
+/*
+let list1: number[] = [1,2,3];
+let list2: Array<number> = [1,2,3]
+let list3: Array<string> = ["me","Me","meme"]
+
+console.log(list1, list2, list3)
+
+let list4: [string, number] = ["lj", 22];
+
+console.log(list4);
+
+enum Colour {Red = 4, Green, blue}
+
+let myvariable: unknown = 10;
+///-------------------------------------------FUNCIONS----------------------------------------
+function hasName(obj:any): obj is {name: string}
+/// funcion hasName in has parametar (obj) of type any (:any)
+/// and it will return the name propery (name) that is object (obj is) with type string (string)
+{
+    return !!obj && typeof
+    obj === "object" &&
+    "name" in obj
+}
+if (hasName(myvariable)){
+    console.log(myvariable.name)
+}
+console.log(myvariable);
+(myvariable as string).toUpperCase();
+function add(num1: number, num2: number = 10): number
+{
+    if(num2)
+    return num1 + num2;
+    else
+    return num1;
+}
+var zbir = add(1,20)
+let zbir1 = add(5)
+console.log(zbir1);
+
+
+function fullNameAge(toto : boolean, name : string, lname : string , age : number ){
+    if (toto){
+       var poz : string = `His name is ${name} and last name is ${lname} and his age is ${age}`
+       console.log(poz + "Ova e vnatre vo true toto");
+       return poz;
+    }
+    else
+        var zoz : string = "Else"
+        console.log(zoz + "sese ");
+        return zoz;
+        
+}
+
+console.log(fullNameAge(true, "Manny", "Calavera", 31));
+
+console.log(fullNameAge(false, "Hector", "LeMans", 31));
+
+
+
+function FullName(person : {firstName: string, lastName: string})
+{
+    console.log(`${person.firstName} ${person.lastName}`)
+}
+let p = { // object
+    firstName: 'Manny', // watch how the names are declared
+    lastName: 'Calavera'
+}
+FullName(p);
+///---------------------------------------INTERFACE-------------------------------------------------
+interface Person{
+    firstName: string
+    lastName: string
+}
+
+function fullname(person: Person) // using the interface
+{
+    console.log(`${person.firstName} ${person.lastName}`)
+}
+let q = { // object
+    firstName: 'Mercedes',
+    lastName: 'Colomar'
+}
+fullname(q); */
+///--------------------------------------CLASSES------------------------------------------------------
+var employee = /** @class */ (function () {
+    function employee(name) {
+        this.employeeName = name;
+    }
+    employee.prototype.greet = function () {
+        console.log("Good M " + this.employeeName);
+    };
+    return employee;
+}());
+var emp1 = new employee('Vishwas');
+console.log(emp1.employeeName);
+emp1.greet(); // already knows that emp1 is a object form that class. 
+///-------------------------------------INHERITANCE---------------------------------------------------
+var Manager = /** @class */ (function (_super) {
+    __extends(Manager, _super);
+    function Manager(managerName) {
+        return _super.call(this, managerName) || this;
+    }
+    Manager.prototype.delegateWork = function () {
+        console.log("Manageer deligating tasks");
+    };
+    return Manager;
+}(employee));
+var m1 = new Manager("Hector");
+m1.delegateWork();
+m1.greet();
+console.log(m1.employeeName);
