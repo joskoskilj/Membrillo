@@ -5,3 +5,7 @@ The test app for React testing it will be in create-react-app-typescript
 Pluralsite (and others) learning app will be new_project. 
 
 For details for the Git commands use the Google Cheat Sheet on the drive.
+
+////Change done in the 1.0_branch
+//// After setting up the brache with the new_branch_repo
+//// Another one
