@@ -117,9 +117,9 @@ let q = { // object
     firstName: 'Mercedes',
     lastName: 'Colomar'
 }
-fullname(q); */
+fullname(q); 
 ///--------------------------------------CLASSES------------------------------------------------------
-var employee = /** @class */ (function () {
+var employee = (function () {
     function employee(names) {
         this.employeeName = name;
     }
@@ -132,7 +132,7 @@ var emp1 = new employee('Vishwas');
 console.log(emp1.employeeName);
 emp1.greet(); // already knows that emp1 is a object form that class. 
 ///-------------------------------------INHERITANCE---------------------------------------------------
-var Manager = /** @class */ (function (_super) {
+var Manager =  (function (_super) {
     __extends(Manager, _super);
     function Manager(managerName) {
         return _super.call(this, managerName) || this;
@@ -146,3 +146,5 @@ var m1 = new Manager("Hector");
 m1.delegateWork();
 m1.greet();
 console.log(m1.employeeName);
+*/
+
