@@ -120,7 +120,7 @@ let q = { // object
 fullname(q); */
 ///--------------------------------------CLASSES------------------------------------------------------
 var employee = /** @class */ (function () {
-    function employee(name) {
+    function employee(names) {
         this.employeeName = name;
     }
     employee.prototype.greet = function () {
