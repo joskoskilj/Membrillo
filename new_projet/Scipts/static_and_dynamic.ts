@@ -8,6 +8,6 @@ module demo_02_03 {
         name: "coll",
         age: 25
     };
-    console.log(person.substring(1,2));
+ 
     
 }
