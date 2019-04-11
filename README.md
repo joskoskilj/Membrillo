@@ -6,6 +6,8 @@ Pluralsite (and others) learning app will be new_project.
 
 For details for the Git commands use the Google Cheat Sheet on the drive.
 
+this is requesting a new pull request. 
+this is for ffeature 1 
 ////Change done in the 1.0_branch
 //// After setting up the brache with the new_branch_repo
 //// Another one
