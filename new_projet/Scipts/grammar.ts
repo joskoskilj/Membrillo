@@ -6,7 +6,7 @@ var lastname: string = "JJ";
 var num1 = 100; 
 var num2: number = 20;
 
-function addNumbers(n1, n2:number, n3:){
+function addNumbers(n1:any, n2:number, n3:any){
     var result = n1 + n2 + n3; 
     var msg = "Sum is = " + result;
     console.log(msg); 

@@ -1,17 +1,4 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 Object.defineProperty(exports, "__esModule", { value: true });
 ///---------------------------------------------VARIBLES-------------------------------
 var message = 'Main';
@@ -117,32 +104,35 @@ let q = { // object
     firstName: 'Mercedes',
     lastName: 'Colomar'
 }
-fullname(q); */
+fullname(q);
 ///--------------------------------------CLASSES------------------------------------------------------
-var employee = /** @class */ (function () {
-    function employee(names) {
-        this.employeeName = name;
-    }
-    employee.prototype.greet = function () {
-        console.log("Good M " + this.employeeName);
-    };
-    return employee;
-}());
-var emp1 = new employee('Vishwas');
+class employee {
+    employeeName: string;
+    
+        constructor(name: string){
+            this.employeeName = name;
+        }
+        greet() {
+            console.log(`Good M ${this.employeeName}`);
+        }
+}
+
+let emp1 = new employee('Vishwas');
 console.log(emp1.employeeName);
-emp1.greet(); // already knows that emp1 is a object form that class. 
+emp1.greet(); // already knows that emp1 is a object form that class.
+
 ///-------------------------------------INHERITANCE---------------------------------------------------
-var Manager = /** @class */ (function (_super) {
-    __extends(Manager, _super);
-    function Manager(managerName) {
-        return _super.call(this, managerName) || this;
+class Manager extends employee {
+    constructor(managerName: string){
+        super(managerName);
     }
-    Manager.prototype.delegateWork = function () {
+    delegateWork(){
         console.log("Manageer deligating tasks");
-    };
-    return Manager;
-}(employee));
-var m1 = new Manager("Hector");
+    }
+}
+
+let m1 = new Manager ("Hector");
 m1.delegateWork();
-m1.greet();
+m1.greet()
 console.log(m1.employeeName);
+*/

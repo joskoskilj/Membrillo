@@ -106,7 +106,7 @@ let q = { // object
     firstName: 'Mercedes',
     lastName: 'Colomar'
 }
-fullname(q); */
+fullname(q); 
 ///--------------------------------------CLASSES------------------------------------------------------
 class employee {
     employeeName: string; 
@@ -137,3 +137,6 @@ let m1 = new Manager ("Hector");
 m1.delegateWork();
 m1.greet()
 console.log(m1.employeeName);
+*/
+
+
